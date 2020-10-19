@@ -1,5 +1,5 @@
 exports.handler =  async event => {
-  const subject = event.queryStringParameter.name || "world"
+  const subject = event.queryStringParameters.name || "world"
 
   return {
     statusCode:200,
